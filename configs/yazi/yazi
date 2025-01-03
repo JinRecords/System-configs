@@ -1,0 +1,2 @@
+[opener] text = [{ run = "nvim \"$@\"", block = true }]
+show_hidden = true
