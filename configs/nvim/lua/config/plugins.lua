@@ -54,7 +54,13 @@ return {
             table.insert(newVirtText, { suffix, "MoreMsg" })
             return newVirtText
         end
-
+        -- UFO folding
+        vim.o.foldcolumn = "1" -- '0' is not bad
+        vim.o.foldlevel = 99 -- Using ufo provider need a large value, feel free to decrease the value
+        vim.o.foldcolumn = 'auto:9'
+        vim.o.foldlevelstart = 99
+        vim.o.foldenable = true
+        vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldclose:]]
         require("ufo").setup({
             fold_virt_text_handler = handler,
             preview = {

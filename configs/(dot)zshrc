@@ -1,0 +1,36 @@
+
+export PATH="$(ruby -e 'print Gem.user_dir')/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/tools/node-v14.15.4-linux-x64/bin:$PATH"
+export EDITOR="nvim"
+export VISUAL="nvim"
+
+alias reyb='yabai --stop-service && yabai --start-service && osascript -e '\''tell application id "tracesOf.Uebersicht" to refresh'\'''
+alias ybsa='sudo yabai --load-sa'
+
+alias c='clear'
+
+alias y='yazi'
+
+alias v='nvim'
+alias barh='osascript -e '\''tell application id "tracesOf.Uebersicht" to set hidden of widget id "Memos-widget-index-jsx" to false'\'' \
+&& osascript -e '\''tell application id "tracesOf.Uebersicht" to set hidden of widget id "Snowflake-widget-snowflake-js" to false'\'' \
+&& osascript -e '\''tell application id "tracesOf.Uebersicht" to set hidden of widget id "UeberPlayer-widget-index-jsx" to false'\'' \
+&& osascript -e '\''tell application id "tracesOf.Uebersicht" to set hidden of widget id "ping-history-widget-index-coffee" to false'\'' \
+&& osascript -e '\''tell application id "tracesOf.Uebersicht" to set hidden of widget id "simple-bar-index-jsx" to false'\'' \
+&& osascript -e '\''tell application id "tracesOf.Uebersicht" to set hidden of widget id "solar-system-widget-index-coffee" to true'\'' \
+&& osascript -e '\''tell application id "tracesOf.Uebersicht" to set hidden of widget id "timeinwords-widget-index-coffee" to false'\'' \
+&& osascript -e '\''tell application id "tracesOf.Uebersicht" to set hidden of widget id "top-cpu-widget-index-coffee" to false'\'' \
+&& osascript -e '\''tell application id "tracesOf.Uebersicht" to set hidden of widget id "top-mem-widget-index-coffee" to false'\'' \
+&& osascript -e '\''tell application id "tracesOf.Uebersicht" to set hidden of widget id "uptime_pro-widget-index-coffee" to false'\'' \
+&& osascript -e '\''tell application id "tracesOf.Uebersicht" to set hidden of widget id "wallpaper-widget-index-jsx" to false'\'''
+alias barl='osascript -e '\''tell application id "tracesOf.Uebersicht" to set hidden of widget id "Memos-widget-index-jsx" to false'\'' \
+&& osascript -e '\''tell application id "tracesOf.Uebersicht" to set hidden of widget id "Snowflake-widget-snowflake-js" to true'\'' \
+&& osascript -e '\''tell application id "tracesOf.Uebersicht" to set hidden of widget id "UeberPlayer-widget-index-jsx" to true'\'' \
+&& osascript -e '\''tell application id "tracesOf.Uebersicht" to set hidden of widget id "ping-history-widget-index-coffee" to true'\'' \
+&& osascript -e '\''tell application id "tracesOf.Uebersicht" to set hidden of widget id "simple-bar-index-jsx" to false'\'' \
+&& osascript -e '\''tell application id "tracesOf.Uebersicht" to set hidden of widget id "solar-system-widget-index-coffee" to true'\'' \
+&& osascript -e '\''tell application id "tracesOf.Uebersicht" to set hidden of widget id "timeinwords-widget-index-coffee" to true'\'' \
+&& osascript -e '\''tell application id "tracesOf.Uebersicht" to set hidden of widget id "top-cpu-widget-index-coffee" to false'\'' \
+&& osascript -e '\''tell application id "tracesOf.Uebersicht" to set hidden of widget id "top-mem-widget-index-coffee" to false'\'' \
+&& osascript -e '\''tell application id "tracesOf.Uebersicht" to set hidden of widget id "uptime_pro-widget-index-coffee" to false'\'' \
+&& osascript -e '\''tell application id "tracesOf.Uebersicht" to set hidden of widget id "wallpaper-widget-index-jsx" to true'\'''
+
